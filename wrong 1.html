@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Photo with Boxes</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff; /* Ubah warna latar belakang halaman */
+        }
+        .photo-container {
+            text-align: center;
+            position: relative; /* Membuat posisi kotak relatif terhadap container */
+        }
+        .photo-container img {
+            max-width: 95%; /* Ubah ukuran lebar foto sesuai kebutuhan */
+            height: auto; /* Mempertahankan proporsi asli gambar */
+            border-radius: 10px; /* Memberikan efek sudut membulat pada foto */
+        }
+        .box-container {
+            position: absolute;
+            bottom: -150px; /* Mengatur posisi kotak ke bawah */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 50px 40px; /* Ubah nilai padding untuk memperbesar kotak */
+            border-radius: 5px;
+            margin: 0 250px; /* Menambahkan jarak antara kotak-kotak */
+            text-decoration: none;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-container">
+        <img src="wrong.jpg" alt="Centered Photo">
+        <div class="box-container">
+            <a href="Beng18-24.html" class="box">Back</a>
+            <a href="ty.html" class="box">Continue</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

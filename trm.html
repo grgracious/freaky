@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player with Text</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center; /* Untuk mengatur teks ke tengah */
+            background-color: #E0FBE2; /* Ubah warna latar belakang halaman */
+        }
+        #video-container {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        #text-container {
+            margin-top: 20px;
+            background-color: #ffffff; /* Warna latar belakang kotak */
+            color: #48984c; /* Warna teks */
+            padding: 10px; /* Padding agar teks tidak terlalu dekat dengan tepi kotak */
+            border-radius: 10px; /* Agar sudut kotak terlihat lebih bulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk menambah dimensi */
+            width: 800px; /* Lebar kotak sama dengan lebar video */
+            margin: 0 auto; /* Pusatkan kotak */
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column; /* Mengatur tata letak vertikal */
+            justify-content: center; /* Memusatkan secara vertikal */
+            align-items: center; /* Memusatkan secara horizontal */
+            margin-top: 30px;
+            width: 800px; /* Lebar kotak kontainer */
+            margin: 0 auto;
+        }
+        .box {
+            width: 100%; /* Lebar kotak 100% dari kotak kontainer */
+            height: 30px; /* Tinggi kotak dikecilkan */
+            background-color: #ffffff;
+            color: rgb(40, 7, 7);
+            padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+            border-radius: 10px;
+            margin-bottom: 20px; /* Menambahkan jarak bawah antara kotak-kotak */
+        }
+        .box:first-child {
+            margin-top: 50px; /* Menambahkan margin atas pada kotak pertama untuk memisahkan dari teks di bawah video */
+        }
+        .box:last-child {
+            margin-bottom: 0; /* Menghilangkan margin bawah pada kotak terakhir */
+        }
+        .box a {
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+            color: #48984c; /* Warna teks tautan */
+            font-size: 25px; /* Ukuran teks tautan */
+        }
+        .box a:hover {
+            color: #FFD700; /* Warna teks saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video controls autoplay loop width="800" height="450">
+            <source src="trms.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="text-container">
+        <h2>Ia mendapatkan sesuatu, apa yang harus ia katakan?</h2>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <a href="benar 2.html" class="option">Terima Kasih</a>
+        </div>
+        <div class="box">
+            <a href="salah 2.html" class="option">Tolong</a>
+        </div>
+        <div class="box">
+            <a href="salah 2.html" class="option">Tidak katakan apa-apa</a>
+        </div>
+    </div>
+</body>
+</html>
